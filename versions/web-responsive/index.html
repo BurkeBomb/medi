@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>MediBurgh • Executive Report • Web Responsive</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        background: #000;
+        color: #e6e6e6;
+        font-family: "Segoe UI", Arial, sans-serif;
+        line-height: 1.6;
+      }
+
+      /* Fade-in animation */
+      .fade {
+        animation: fadein 1.2s ease;
+      }
+
+      @keyframes fadein {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* Responsive container */
+      .container {
+        max-width: 1100px;
+        margin: auto;
+        padding: 30px 20px;
+      }
+
+      /* Cover */
+      .cover {
+        text-align: center;
+        padding: 80px 20px;
+        background: radial-gradient(
+          circle at 50% 20%,
+          rgba(245, 193, 108, 0.18),
+          transparent 60%
+        );
+      }
+
+      .cover-logo {
+        width: 220px;
+        max-width: 40vw;
+        object-fit: contain;
+        filter: drop-shadow(0px 0px 14px rgba(245, 193, 108, 0.35));
+      }
+
+      .title {
+        font-size: 42px;
+        margin-top: 40px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        background: linear-gradient(to right, #f5c16c, #b38a4c);
+        -webkit-background-clip: text;
+        color: transparent;
+      }
+
+      .subtitle {
+        font-size: 20px;
+        color: #c9c9c9;
+        margin-top: 15px;
+      }
+
+      .divider {
+        width: 200px;
+        height: 3px;
+        background: linear-gradient(to right, #f5c16c, transparent);
+        margin: 40px auto;
+      }
+
+      .meta {
+        font-size: 15px;
+        color: #999;
+        line-height: 1.8;
+      }
+
+      /* Section header */
+      .section-header {
+        border-bottom: 3px solid #f5c16c;
+        padding-bottom: 15px;
+        margin-top: 60px;
+        margin-bottom: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: linear-gradient(
+          to right,
+          rgba(255, 255, 255, 0.03),
+          transparent
+        );
+      }
+
+      .brand-logo {
+        width: 100px;
+        max-width: 20vw;
+        object-fit: contain;
+        opacity: 0.85;
+      }
+
+      .section-title {
+        font-size: 28px;
+        color: #f5c16c;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+
+      .section-sub {
+        font-size: 15px;
+        color: #bbb;
+        margin-top: 5px;
+      }
+
+      /* KPI cards */
+      .kpi-card {
+        border: 1px solid #f5c16c;
+        padding: 18px;
+        margin-bottom: 18px;
+        background: #0d0d0d;
+        border-radius: 6px;
+      }
+
+      .kpi-title {
+        font-size: 13px;
+        color: #f5c16c;
+        text-transform: uppercase;
+      }
+
+      .kpi-value {
+        font-size: 26px;
+        margin-top: 6px;
+        color: #fff;
+      }
+
+      .kpi-sub {
+        font-size: 12px;
+        color: #999;
+      }
+
+      /* Tables */
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        background: #0d0d0d;
+      }
+
+      table th,
+      table td {
+        border: 1px solid #333;
+        padding: 10px;
+        font-size: 14px;
+      }
+
+      table th {
+        background: #1a1a1a;
+        color: #f5c16c;
+        text-transform: uppercase;
+      }
+
+      table tr:nth-child(even) {
+        background: #111;
+      }
+
+      /* Mobile scaling */
+      @media (max-width: 600px) {
+        .cover-logo {
+          width: 160px;
+        }
+        .brand-logo {
+          width: 70px;
+        }
+        .title {
+          font-size: 32px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="cover fade">
+      <img src="../../assets/logos/metallic-logo.jpg" class="cover-logo" />
+      <div class="title">MediBurgh Executive Report</div>
+      <div class="subtitle">
+        Financial Intelligence Reconciliation • April + May 2026
+      </div>
+      <div class="divider"></div>
+      <div class="meta">
+        Prepared for: Dr Fathima Vawda<br />
+        Prepared by: MediBurgh Financial Intelligence Unit<br />
+        Edition: Web Responsive<br />
+        Date Generated: 06 July 2026
+      </div>
+    </div>
+
+    <div class="container fade">
+      <div class="section-header">
+        <div>
+          <div class="section-title">Executive KPI Summary</div>
+          <div class="section-sub">Web Edition</div>
+        </div>
+        <img src="../../assets/logos/metallic-logo.jpg" class="brand-logo" />
+      </div>
+
+      <div class="kpi-card">
+        <div class="kpi-title">Total Bank Credits (Apr + May)</div>
+        <div class="kpi-value">R 731,548.56</div>
+        <div class="kpi-sub">Verified inflow</div>
+      </div>
+
+      <div class="kpi-card">
+        <div class="kpi-title">Total NOT OURS (Leakage)</div>
+        <div class="kpi-value">R 45,490.08</div>
+        <div class="kpi-sub">Corrected leakage</div>
+      </div>
+
+      <div class="kpi-card">
+        <div class="kpi-title">Net Scheme Credits</div>
+        <div class="kpi-value">R 686,058.48</div>
+      </div>
+
+      <div class="kpi-card">
+        <div class="kpi-title">Ledger-Aligned Total</div>
+        <div class="kpi-value">R 293,184.17</div>
+      </div>
+    </div>
+  </body>
+</html>

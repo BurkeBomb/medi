@@ -1,0 +1,7 @@
+--- Folder Structure ---
+desktop.ini
+[docs]
+    └── .project_structure_filter
+projectscaffold
+
+--- File Contents ---

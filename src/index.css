@@ -1,0 +1,17 @@
+img,
+svg,
+.logo,
+[class*='logo'],
+[class*='brand'],
+[class*='icon'] {
+  filter: none !important;
+  mix-blend-mode: normal !important;
+  opacity: 1 !important;
+  background: transparent !important;
+  color: inherit !important;
+}
+
+svg * {
+  fill: currentColor !important;
+  stroke: currentColor !important;
+}
